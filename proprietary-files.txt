@@ -88,10 +88,6 @@ vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb|4d57919157b4218bc6cd3032901285f5a5d
 vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp|41a5a897f5298c9c7fce130457e53afb4ad097d0
 vendor/etc/acdbdata/adsp_avs_config.acdb|3a8a0f2908756d39ee600c02b429f131716f6044
 
-# Bluetooth (aptX) - from crosshatch-user 10 QP1A.190711.020 5800535 release-keys
-product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-product/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
-
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -1428,21 +1424,6 @@ vendor/etc/qdcm_calib_data_nt36672a_video_mode_dsi_tianma_panel.xml
 vendor/etc/qdcm_calib_data_nt36672_truly_fhd_video_mode_dsi_panel.xml
 
 # DPM - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
--product/priv-app/dpmserviceapp/dpmserviceapp.apk|9fd873c5330c03c62dfdeb6540b5984588295319
-framework/tcmclient.jar|a55e6981795bf74b3249c5e7297ea4e3cf1dea83
-lib64/libdiag_system.so|45d5f9eb339e0e92994948c8e15587385deafd4d
-product/bin/dpmd|7503d40ddb06e41333aafe4613d0dba6aed9b896
-product/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
-product/etc/init/dpmd.rc|7f95195a89fddce06b93006a737701270e91f669
-product/etc/permissions/com.qti.dpmframework.xml|4613f8b8629d0b823e6aaab45d399ac30da06c09
-product/etc/permissions/dpmapi.xml|0991b3069308620cfcad53873e9f09af181b981d
-product/framework/com.qti.dpmframework.jar|e39a7e06af2d1e95a3724c19c36b8716277f53a1
-product/framework/dpmapi.jar|4696df9793ad676b305d53b5d7ce65ecf74771ad
-product/lib64/com.qualcomm.qti.dpm.api@1.0.so|a763bb1bbeecb84723bff6f547a3b23fab68dee3
-product/lib64/libdpmctmgr.so|73e25d35ceadd86fc14ceac28bfa47736afa779f
-product/lib64/libdpmfdmgr.so|fd63e399ab82fada5d239456c6d7937fa6d3ca08
-product/lib64/libdpmframework.so|522a8c38dd9dbbb6a14b136ecb69ed4de1a614e4
-product/lib64/libdpmtcm.so|9f580422fdca89598289d863dd556b2f0e62f7a8
 vendor/bin/dpmQmiMgr|2bd70eea484701c06ef172d67d8439060d737ab6
 vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
 vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|fbff6357ee46dd6d62f490a942ff567b6ce955d1
@@ -1975,8 +1956,6 @@ vendor/lib64/vendor.display.color@1.3.so|906603578d0b833d990a50bff62f36a0fc186f8
 vendor/lib64/vendor.display.postproc@1.0.so|0b578a42706c770c6c61eccdee8a9e4c89c08b10
 
 # QMI - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
-etc/permissions/qti_permissions.xml|e6ff4572352b1a4f91b6b9d7cbb1cad9924410a0
 vendor/bin/irsc_util|4381ded94ac2775cf186c97c7ad6236eaa209eac
 vendor/bin/pd-mapper|17569fec4fcb1ba459461f99185f2609d99decf5
 vendor/lib/libdiag.so|0d48f6e859381955d711c7c24bd2fdf6d36ff204
@@ -2022,22 +2001,7 @@ vendor/lib64/libGPTEE_vendor.so|0abd055676626e20585b9ab396c8973fd53af191
 vendor/lib64/libQTEEConnector_vendor.so|48275dc35631062248c7d697478c58eb6793a92a
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|3202c209bd8249e3f76dec1108788b1a85b53561
 
-# Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
-product/framework/qti-telephony-common.jar|74adbf98e89531ac385ab5c4cea3c2549a0d24b0
-
 # Radio - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
--product/app/QtiTelephonyService/QtiTelephonyService.apk|db60b6fe27b3033f6468b3170b23af18dd0bcdaf
--product/app/atfwd/atfwd.apk|62ec25e5b0e68a820a7a52223465d95e8e5c9be8
--product/app/datastatusnotification/datastatusnotification.apk|ea611e4f1efc3077adf3054051ead13422927426
--product/app/embms/embms.apk|e364de916ae2dd9a69aee6a9766c3783457a6d75
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|20c011ffc54539161fa7cc05c55c9c5ed3f936b4
--vendor/app/IWlanService/IWlanService.apk|c152322e169240d16a599581c0af8a3f2c8ee0a9
-product/etc/permissions/embms.xml|5589ed8da213acd27e2ad2109094561eb1be30a7
-product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
-product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb031c8
-product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf8585566b4cd
-product/framework/embmslibrary.jar|00eb5b4144f001423032a88cc1d227b3655db88b
-product/framework/qcrilhook.jar|23768fda90519d799e682fd058ec85b7b5cd6f89
 vendor/bin/ATFWD-daemon|317cb9a7a2e1eb5727d5b355c6779d3d8807d2db
 vendor/bin/hw/qcrild|2c2869715c1fb8ff162d3d3e3f43a4ec2193f670
 vendor/bin/netmgrd|90cba32bb3de3ecb5cb571ecbf0136ceb780cda3
@@ -2110,26 +2074,6 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql|0734c6a2863ed
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql|fcb2cba3bfd718ecdc8d3cfac3a0b2b2c7e8c506
 
 # Radio - IMS - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
--product/app/uceShimService/uceShimService.apk|7a67142692073117f0ec6a2d6859dc002b0c02b2
--product/priv-app/ims/ims.apk|77ea72ab04c651c2a365320179cb1b7c75dcd8bb
-product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|aeaf8d4c7d421bd25a1aca1736980b6e4575c7ce
-product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|d52cdba3a8f1c00098568965c0cbaa03502f961e
-product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml|bc80cc63f55de0d80e9756dd4a9d0afc36072c61
-product/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar|ffd8d94c2b41fef4e422f7247ee164d7ed70ff5d
-product/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar|836ef6801f0a09cde1bbef7af8b282365198fac4
-product/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar|fde4900c414b5666c09ca2e792a0b7ac1be3a808
-product/framework/com.qualcomm.qti.uceservice-V2.0-java.jar|2f4d6d2681e1adfc249eb6f88858710b12053448
-product/framework/com.qualcomm.qti.uceservice-V2.1-java.jar|f9dadb1b224d100ecc0a8785bde463d9d1bc7a45
-product/framework/vendor.qti.ims.callinfo-V1.0-java.jar|a01874e994d2674d538f86de39e9ccbf6ef3fc8c
-product/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar|f2a2e5554ad6ae1363a9aa76c6d0e6732bbdc7fb
-product/lib64/lib-imsvideocodec.so|eb99fd4fc193acdfee8defb77d22821a41173843
-product/lib64/lib-imsvt.so|df2c3dabb854d10fa50d6938540bef3101446926
-product/lib64/lib-imsvtextutils.so|219d6239a154ee727b50f8fa52d382783dd49f74
-product/lib64/lib-imsvtutils.so|b566407a5a8c1be3550b49cdd6a81a7ef0af4974
-product/lib64/libimscamera_jni.so|7cb89110cca94d37d68c705f12a7a5a4ee106139
-product/lib64/libimsmedia_jni.so|3540752cc3658261ea3c909f03018eea4398f84e
-product/lib64/vendor.qti.imsrtpservice@2.0.so|2a5bca02128b51f8d47dd2f9cf886e0d23e7bbd9
-product/lib64/vendor.qti.imsrtpservice@2.1.so|4c9f4eb70e8697472d96522a5118964d7beb73fe
 vendor/bin/ims_rtp_daemon|bfc152708ef4d2f5a6b91942af727b19cc579f74
 vendor/bin/imsdatadaemon|6d207c9a17a997988b588acc46659c0d8ef3ba83
 vendor/bin/imsqmidaemon|a243ce0af9891e0c4721c889b82a3068e8a02d0b
