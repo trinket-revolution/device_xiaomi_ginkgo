@@ -256,6 +256,14 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml
 
+# QTI components
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    bt \
+    perf \
+    telephony \
+    wfd
+
 # Radio
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
