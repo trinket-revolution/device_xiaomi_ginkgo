@@ -202,6 +202,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.has_HDR_display=true \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.wcg_composition_dataspace=143261696
+    ro.surface_flinger.protected_contents=true \
+    ro.surface_flinger.vsync_event_phase_offset_ns=4000000 \
+    ro.surface_flinger.vsync_sf_event_phase_offset_ns=8000000
 
 # Early phase offset configuration for SurfaceFlinger
 PRODUCT_PROPERTY_OVERRIDES += \
