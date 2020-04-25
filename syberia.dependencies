@@ -1,0 +1,87 @@
+[
+  {
+    "repository": "TRINKET-ANDROID/platform_device_xiaomi_ginkgo",
+    "target_path": "device/xiaomi/ginkgo",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/platform_vendor_xiaomi_ginkgo",
+    "target_path": "vendor/xiaomi/ginkgo",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TheHitMan7/android_kernel_sm8150",
+    "target_path": "kernel/xiaomi/ginkgo",
+    "branch":      "mainline"
+  },
+  {
+    "repository": "TRINKET-ANDROID/platform_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/platform_external_ant-wireless_antradio-library",
+    "target_path": "external/ant-wireless/antradio-library",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/hardware_qcom_display-caf_sm8150",
+    "target_path": "hardware/qcom/display-caf/sm8150",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/hardware_qcom_media-caf_sm8150",
+    "target_path": "hardware/qcom/media-caf/sm8150",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/hardware_qcom_audio-caf_sm8150",
+    "target_path": "hardware/qcom/audio-caf/sm8150",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/platform_external_json-c",
+    "target_path": "external/json-c",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/platform_hardware_qcom-caf_common",
+    "target_path": "hardware/qcom/common",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/platform_prebuilts_abi-dumps_vndk",
+    "target_path": "prebuilts/abi-dumps/vndk",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/platform_prebuilts_abi-dumps_ndk",
+    "target_path": "prebuilts/abi-dumps/ndk",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/platform_vendor_qcom_opensource_dataservices",
+    "target_path": "vendor/qcom/opensource/dataservices",
+    "branch":      "10.0"
+  },
+  {
+    "repository": "TRINKET-ANDROID/platform_vendor_qcom_opensource_data-ipa-cfg-mgr",
+    "target_path": "vendor/qcom/opensource/data-ipa-cfg-mgr",
+    "branch":      "10.0"
+  }
+  {
+    "repository": "TRINKET-ANDROID/platform_packages_apps_FMRadio",
+    "target_path": "packages/apps/FMRadio",
+    "branch":      "10.0"
+  }
+  {
+    "repository": "TRINKET-ANDROID/platform_vendor_qcom_opensource_fm-commonsys",
+    "target_path": "vendor/qcom/opensource/fm-commonsys",
+    "branch":      "10.0"
+  }
+  {
+    "repository": "TRINKET-ANDROID/platform_vendor_qcom_opensource_libfmjni",
+    "target_path": "vendor/qcom/opensource/libfmjni",
+    "branch":      "10.0"
+  }
+]
