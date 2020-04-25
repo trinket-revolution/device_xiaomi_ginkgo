@@ -14,53 +14,25 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import hashlib
 import common
 import re
 
 def FullOTA_InstallEnd(info):
-  OTA_InstallEnd(info, False)
+  OTA_InstallEnd(info)
   return
 
 def IncrementalOTA_InstallEnd(info):
-  OTA_InstallEnd(info, True)
+  OTA_InstallEnd(info)
   return
 
-def FullOTA_Assertions(info):
-  AddBasebandAssertion(info)
-  return
+def AddImage(info, basename, dest):
+  name = basename
+  data = info.input_zip.read("IMAGES/" + basename)
+  common.ZipWriteStr(info.output_zip, name, data)
+  info.script.AppendExtra('package_extract_file("%s", "%s");' % (name, dest))
 
-def IncrementalOTA_Assertions(info):
-  AddBasebandAssertion(info)
-  return
-
-def AddImage(info, basename, dest, incremental):
-  path = "IMAGES/" + basename
-  if path not in info.input_zip.namelist():
-    return
-
-  if incremental:
-    input_zip = info.source_zip
-  else:
-    input_zip = info.input_zip
-  data = input_zip.read("IMAGES/" + basename)
-  common.ZipWriteStr(info.output_zip, basename, data)
-  info.script.Print("Flashing {} image".format(dest.split('/')[-1]))
-  info.script.AppendExtra('package_extract_file("%s", "%s");' % (basename, dest))
-
-def OTA_InstallEnd(info, incremental):
-  AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo", incremental)
-  AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta", incremental)
-  return
-
-def AddBasebandAssertion(info):
-  android_info = info.input_zip.read("OTA/android-info.txt")
-  m = re.search(r'require\s+version-baseband\s*=\s*(.+)', android_info)
-  if m:
-    timestamp, firmware_version = m.group(1).rstrip().split(',')
-    timestamps = timestamp.split('|')
-    if ((len(timestamps) and '*' not in timestamps) and \
-        (len(firmware_version) and '*' not in firmware_version)):
-      cmd = 'assert(xiaomi.verify_baseband(' + ','.join(['"%s"' % baseband for baseband in timestamps]) + ') == "1" || abort("ERROR: This package requires firmware from MIUI {1} or newer. Please upgrade firmware and retry!"););'
-      info.script.AppendExtra(cmd.format(timestamps, firmware_version))
+def OTA_InstallEnd(info):
+  info.script.Print("Patching firmware images...")
+  AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
+  AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
   return
