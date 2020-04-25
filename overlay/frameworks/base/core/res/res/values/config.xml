@@ -622,4 +622,7 @@
 
     <!-- Whether to allow sending active app broadcast -->
     <bool name="config_allowActivePackageBroadcast">true</bool>
+
+    <!-- Whether device has a physical display cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
 </resources>

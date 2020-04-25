@@ -19,8 +19,3 @@
 
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
-
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Whether device has a physical display cutout -->
-    <bool name="config_physicalDisplayCutout">true</bool>
-</resources>
