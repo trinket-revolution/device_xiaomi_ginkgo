@@ -156,6 +156,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.data.mode=concurrent
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.se.type=HCE,UICC
+
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=libqti-perfd-client.so
