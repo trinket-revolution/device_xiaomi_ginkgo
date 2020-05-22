@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/komodo_ginkgo.mk
+    $(LOCAL_DIR)/havoc_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    komodo_ginkgo-user \
-    komodo_ginkgo-userdebug \
-    komodo_ginkgo-eng
+    havoc_ginkgo-user \
+    havoc_ginkgo-userdebug \
+    havoc_ginkgo-eng
