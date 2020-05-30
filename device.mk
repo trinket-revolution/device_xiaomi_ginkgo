@@ -15,6 +15,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/google/pixel
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
@@ -353,10 +358,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/xiaomi/ginkgo/nfc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf
 
-# Power
+# PowerHAL
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.ginkgo \
     powerhint.json
+
+# Powerstats
+PRODUCT_PACKAGES += \
+    android.hardware.power.stats@1.0-service.ginkgo
+
+PRODUCT_PACKAGES_DEBUG += \
+    pwrstats_util
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
