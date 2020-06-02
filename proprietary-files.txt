@@ -1615,51 +1615,51 @@ vendor/firmware/novatek_ts_ebbg_mp.bin
 vendor/firmware/novatek_ts_tianma_fw.bin
 vendor/firmware/novatek_ts_tianma_mp.bin
 
-# Graphics - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/lib/egl/eglSubDriverAndroid.so|930b9765626da6454c010596af51c01a40967d63
-vendor/lib/egl/libEGL_adreno.so|8ca78d3373e0481b0562f93a6629a7b9a0bc1ad5
-vendor/lib/egl/libGLESv1_CM_adreno.so|74e1a229517e44bf6f1f37f314d8561bee8f5d0a
-vendor/lib/egl/libGLESv2_adreno.so|0a82696149a0396732d1542502e8c9cfbe9f6b84
-vendor/lib/egl/libQTapGLES.so|ace68d6e0d2c4e6f395ab542f939a4b3e027a0cd
-vendor/lib/egl/libq3dtools_adreno.so|c28bfb4e627e62e6b041fade66d18632ed10d0f7
-vendor/lib/egl/libq3dtools_esx.so|9f9a65d2f39f8bbadf9e8f19bfb22a45319514a7
-vendor/lib/libC2D2.so|aec13c4cf2f766cbff060e8edfa5d465135d7c35
-vendor/lib/libCB.so|d5c706d02ac289542a1a3cd02c578ed690b6eaf4
-vendor/lib/libOpenCL.so|fd7559d43657e3e8b3b5b4c46613f17f2865ce57
-vendor/lib/libRSDriver_adreno.so|03cd2143301033c96793d65343ed12a96173d353
-vendor/lib/libadreno_utils.so|179e0e9d7115129980876abfe7623af644ffb243
-vendor/lib/libbccQTI.so|131cc7db5fe13b60277e3c993cf493d81f041eb2
-vendor/lib/libc2d30_bltlib.so|938cffcfc4dae4b90a875bbbf04e128bf2350b08
-vendor/lib/libgsl.so|ac63f06c0eafae2a4abfce97ecfefceeb0ac7d7d
-vendor/lib/libllvm-glnext.so|5289d8c4c600de062569d2dfea81ed2ad9b2a8d5
-vendor/lib/libllvm-qcom.so|75c509b62e29d4c33f7c93975614a3f8d2fbb30b
-vendor/lib/libpvr.so|78adbda9057d2bed6aa556a28e345f062bf1169d
-vendor/lib/librs_adreno.so|361de6afe5421246d4910b2e9e568e7dfc3d7e4b
-vendor/lib/librs_adreno_sha1.so|959b4acd0a63ac80b925eced44aa7f0976884fa1
-vendor/lib64/egl/eglSubDriverAndroid.so|e83b41438c485f909e20f2f9023dfdc4ead59254
-vendor/lib64/egl/libEGL_adreno.so|0708871b8022100266143afe86795d730edde45b
-vendor/lib64/egl/libGLESv1_CM_adreno.so|05650dc41a03e98ad0a9f7f37c90df53c2e75606
-vendor/lib64/egl/libGLESv2_adreno.so|bec22a88fb6e61c36229c97ff434b2b4cf3eb175
-vendor/lib64/egl/libQTapGLES.so|e8b51af9542d3b41c79b69163732d4386ad07aee
-vendor/lib64/egl/libq3dtools_adreno.so|ecf0fd2df00aa673373b9965c426e04bb30760d5
-vendor/lib64/egl/libq3dtools_esx.so|90fce574018866d1099ee4918940350a71aa7782
-vendor/lib64/libC2D2.so|ce0aceb5116cea71454c5313f661c5d042eeb218
-vendor/lib64/libCB.so|65dd12e02813f3c2eade3e19e8ffbf289dc8de5f
-vendor/lib64/libOpenCL.so|21897637e702c4a97eb748934e9f1fc8880881c5
-vendor/lib64/libRSDriver_adreno.so|69cdad43c1ffdcfd7a610e7a659737c171e1493a
-vendor/lib64/libadreno_utils.so|a732da174c5f9714e494882cc6a1984548492757
-vendor/lib64/libbccQTI.so|d4732f569f53d0152bcb824d94819c7b183a7a8b
-vendor/lib64/libc2d30_bltlib.so|254b4b60fe1795188628ab4d156b9656af79c776
-vendor/lib64/libgsl.so|c10b7606da2926abd59161243a1d404963e341dc
-vendor/lib64/libllvm-glnext.so|6175b85f148444c2e2f9d6396b0bb78470371750
-vendor/lib64/libllvm-qcom.so|40555ee894fb7aef442b74d4a7d995b7c1e61303
-vendor/lib64/libpvr.so|55ad310d84bb60bb761a2396fdc5ace4564c9b0a
-vendor/lib64/librs_adreno.so|c84431c31efd21b30d95ebe9ea3dc4792f0de4ac
-vendor/lib64/librs_adreno_sha1.so|df03717b40ad5457dbf9234ce4475129f83aff92
+# Graphics
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libQTapGLES.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libOpenCL.so
+vendor/lib/libRSDriver_adreno.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libbccQTI.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/libpvr.so
+vendor/lib/librs_adreno.so
+vendor/lib/librs_adreno_sha1.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libQTapGLES.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libCB.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libRSDriver_adreno.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libbccQTI.so
+vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libgsl.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+vendor/lib64/libpvr.so
+vendor/lib64/librs_adreno.so
+vendor/lib64/librs_adreno_sha1.so
 
-# Graphics (HDR) - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/lib/libhdr_tm.so|fffd91bcfe1b9ae33498624e3e36b46364bf7991
-vendor/lib64/libhdr_tm.so|103b2f0893a767f162ffc2945b5edea062fb0354
+# Graphics (HDR)
+vendor/lib/libhdr_tm.so
+vendor/lib64/libhdr_tm.so
 
 # Graphics (SDM)
 -vendor/lib/libsdm-disp-vndapis.so
@@ -1734,6 +1734,9 @@ vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
+
+
+# Graphics (Vulkan)
 vendor/lib/hw/vulkan.trinket.so
 vendor/lib64/hw/vulkan.trinket.so
 
@@ -1951,29 +1954,28 @@ vendor/bin/pm-service|0115038b692a2914e28df8b250689306887e2d9b
 vendor/lib/libperipheral_client.so|7ef98f63b1cec72113f7c2193bc4e8ff523f7503
 vendor/lib64/libperipheral_client.so|179a96f4e443c754fd70ff4e0c3c76b71047836c
 
-# Qualcomm Display Utils - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti|680370eae4858b06e5be5d3380bdebd0d8b13b8d
-vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc|69d9cbc54f8ac0a0fb010f92bfa7de5981d643cf
-vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so|9aa1eacb0880e2cf95f3745f13b1e2222dceb562
-vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so|f227ee67b99082b8aeea5ef9830a3c23efc7e4c6
+# Qualcomm Display Utilss
+vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti
+vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
+vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
+vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
-# Postprocessing - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
-product/lib64/vendor.display.color@1.0.so|e90c75046ba1f6f677b9f719caaae8d91d1a5cde
-vendor/bin/hw/vendor.display.color@1.0-service|ab46995540bd4721e1241de17241e55dbbd5435c
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
-vendor/lib/libdisp-aba.so|95e3dbcf26416500a23ceac04e6b1b881a9204ba
-vendor/lib/libdisplayqos.so|80763104cc5296cfc1ee98956877ad57838d871b
-vendor/lib/vendor.display.color@1.0.so|1c6cdfd0be07497fd82c509b0e8d43eb1b2516c3
-vendor/lib/vendor.display.color@1.1.so|1db61e68a6fe9e99debc63a00d68e665564881d5
-vendor/lib/vendor.display.color@1.2.so|df54fd87747b8b78c73b18e9426e28d668e790ce
-vendor/lib/vendor.display.postproc@1.0.so|d51673718da0fe3437f87bd8b223885f0ccf03d6
-vendor/lib64/libdisp-aba.so|3a35a8c7120d5f0748b4584dd56b1398d1acdd69
-vendor/lib64/libdisplayqos.so|b67d8ba7846f4dfeef4fecb805c0273b040db3b3
-vendor/lib64/vendor.display.color@1.0.so|3939e4d1ab4f74e6bbd04524a9e6211ade9c5d0b
-vendor/lib64/vendor.display.color@1.1.so|ce0030a7e6593236277962ffff290b834eaf1f25
-vendor/lib64/vendor.display.color@1.2.so|6adfa77494dbad3be8a34b259b25f8a4d9dd6a04
-vendor/lib64/vendor.display.color@1.3.so|906603578d0b833d990a50bff62f36a0fc186f85
-vendor/lib64/vendor.display.postproc@1.0.so|0b578a42706c770c6c61eccdee8a9e4c89c08b10
+# Postprocessing
+vendor/bin/hw/vendor.display.color@1.0-service
+vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib/libdisp-aba.so
+vendor/lib/libdisplayqos.so
+vendor/lib/vendor.display.color@1.0.so
+vendor/lib/vendor.display.color@1.1.so
+vendor/lib/vendor.display.color@1.2.so
+vendor/lib/vendor.display.postproc@1.0.so
+vendor/lib64/libdisp-aba.so
+vendor/lib64/libdisplayqos.so
+vendor/lib64/vendor.display.color@1.0.so
+vendor/lib64/vendor.display.color@1.1.so
+vendor/lib64/vendor.display.color@1.2.so
+vendor/lib64/vendor.display.color@1.3.so
+vendor/lib64/vendor.display.postproc@1.0.so
 
 # QMI - from davinci-user 10 QKQ1.190825.002 V11.0.2.0.QFJCNXM release-keys
 etc/permissions/qti_libpermissions.xml|593bcb72cce68ceb0a70f50bcae7d460114e7c62
