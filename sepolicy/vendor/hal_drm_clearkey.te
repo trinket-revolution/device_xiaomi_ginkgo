@@ -1,0 +1,1 @@
+allow hal_drm_clearkey system_file:file { execute map read open getattr };

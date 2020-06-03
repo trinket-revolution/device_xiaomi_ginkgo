@@ -1,1 +1,2 @@
 allow hal_iop_default hal_iop_default:capability { dac_override };
+allow hal_iop_default system_file:file { execute getattr map open read };

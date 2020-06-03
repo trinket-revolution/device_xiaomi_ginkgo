@@ -1,14 +1,10 @@
 get_prop(system_server, vendor_fp_prop)
 
-allow system_server persist_camera_prop:file { read };
-allow system_server persist_camera_prop:file { open };
-allow system_server persist_camera_prop:file { getattr };
-allow system_server persist_camera_prop:file { map };
-allow system_server vendor_camera_prop:file { read };
-allow system_server vendor_camera_prop:file { open };
-allow system_server vendor_camera_prop:file { map };
-allow system_server vendor_camera_prop:file { getattr };
-allow system_server vendor_default_prop:file { read };
-allow system_server vendor_default_prop:file { open };
-allow system_server vendor_default_prop:file { getattr };
+allow system_server persist_camera_prop:file { read open getattr map };
+allow system_server vendor_camera_prop:file { read open map getattr };
+allow system_server vendor_default_prop:file { read open getattr map };
 allow system_server init:binder { call };
+allow system_server sysfs_battery_supply:file { getattr open read write };
+allow system_server sysfs_usb_supply:file { getattr open read write };
+allow system_server shell_prop:property_service { set };
+allow system_server exfat:dir { open read };

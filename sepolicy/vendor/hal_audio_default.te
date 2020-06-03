@@ -10,5 +10,8 @@ allow hal_audio_default bluetooth_prop:file { map };
 allow hal_audio_default vendor_mpctl_prop:file { read };
 allow hal_audio_default vendor_mpctl_prop:file { open };
 allow hal_audio_default vendor_mpctl_prop:file { getattr };
+allow hal_audio_default init:binder { call };
+allow hal_audio_default sysfs:dir { open read };
+allow hal_audio_default system_file:file { execute map read open getattr };
 
 set_prop(hal_audio_default, vendor_audio_prop)

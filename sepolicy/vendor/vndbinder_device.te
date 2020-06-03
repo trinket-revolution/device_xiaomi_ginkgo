@@ -1,5 +1,1 @@
-allow init vndbinder_device:chr_file { ioctl };
-allow init vndbinder_device:chr_file { map };
-allow init vndbinder_device:chr_file { write };
-allow init vndbinder_device:chr_file { open };
-allow init vndbinder_device:chr_file { read };
+allow init vndbinder_device:chr_file { ioctl map write open read };

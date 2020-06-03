@@ -1,0 +1,1 @@
+allow hal_cas_default system_file:file { map execute read open getattr };

@@ -1,0 +1,1 @@
+allow hal_configstore_default system_file:file { map execute getattr open read };

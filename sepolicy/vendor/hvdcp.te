@@ -1,0 +1,1 @@
+allow hvdcp system_file:file { getattr map read execute open };

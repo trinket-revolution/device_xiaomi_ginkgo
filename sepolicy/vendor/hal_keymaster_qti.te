@@ -1,0 +1,2 @@
+allow hal_keymaster_qti system_file:file { execute map read };
+allow hal_keymaster_qti system_file:file { getattr open };

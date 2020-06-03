@@ -1,0 +1,1 @@
+allow qti system_file:file { getattr map };

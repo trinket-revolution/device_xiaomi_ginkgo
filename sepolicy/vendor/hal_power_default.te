@@ -23,3 +23,8 @@ allow hal_power_default proc:file { write };
 
 # To get/set powerhal state property
 set_prop(hal_power_default, power_prop)
+
+allow hal_power_default power_prop:file { read open getattr map };
+allow hal_power_default system_file:file { map read };
+allow hal_power_default pps_socket:sock_file { write };
+allow hal_power_default hal_graphics_composer_default:unix_stream_socket { connectto };

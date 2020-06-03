@@ -1,1 +1,2 @@
 allow mediaprovider sdcardfs:lnk_file { getattr };
+allow mediaprovider radio_service:service_manager { find };

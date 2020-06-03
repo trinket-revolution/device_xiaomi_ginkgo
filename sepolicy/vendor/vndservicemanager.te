@@ -1,0 +1,1 @@
+allow vndservicemanager system_file:file { execute map open read getattr };

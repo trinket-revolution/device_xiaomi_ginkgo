@@ -1,0 +1,1 @@
+allow hal_imsrtp system_file:file { getattr map read execute open };

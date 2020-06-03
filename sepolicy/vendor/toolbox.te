@@ -1,0 +1,3 @@
+allow toolbox init:fifo_file { ioctl write getattr };
+allow toolbox kernel:system { syslog_read };
+allow toolbox kmsg_device:chr_file { open read };
