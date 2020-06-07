@@ -12,14 +12,39 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+
+cc_library_static {
+    name: "libpixelpowerstats",
+    vendor_available: true,
+    export_include_dirs: ["include"],
+
+    srcs: [
+        "PowerStats.cpp",
+        "PowerStatsUtils.cpp",
+        "GenericStateResidencyDataProvider.cpp",
+        "WlanStateResidencyDataProvider.cpp",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
+
+    shared_libs: [
+        "android.hardware.power@1.1",
+        "android.hardware.power.stats@1.0",
+        "pixelpowerstats_provider_aidl_interface-cpp",
+        "liblog",
+        "libbinder",
+    ],
+}
+
 cc_binary {
-    name: "android.hardware.power.stats@1.0-service.ginkgo",
+    name: "android.hardware.power.stats@1.0-service.pixel",
     relative_install_path: "hw",
-    vintf_fragments: ["android.hardware.power.stats@1.0-service.ginkgo.xml"],
-    init_rc: ["android.hardware.power.stats@1.0-service.ginkgo.rc"],
+    init_rc: ["android.hardware.power.stats@1.0-service.pixel.rc"],
     srcs: [
         "service.cpp",
-        "RailDataProvider.cpp",
         "GpuStateResidencyDataProvider.cpp",
     ],
     cflags: [
