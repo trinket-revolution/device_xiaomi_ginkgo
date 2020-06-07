@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "android.hardware.power@1.3-service.ginkgo"
+#define LOG_TAG "android.hardware.power@1.3-service.ginkgo-libperfmgr"
 
 #include <android/log.h>
 #include <hidl/HidlTransportSupport.h>
 
 #include "Power.h"
 
-using android::OK;
 using android::sp;
 using android::status_t;
+using android::OK;
 
 // libhwbinder:
 using android::hardware::configureRpcThreadpool;
@@ -33,8 +33,8 @@ using android::hardware::joinRpcThreadpool;
 using android::hardware::power::V1_3::IPower;
 using android::hardware::power::V1_3::implementation::Power;
 
-int main(int /* argc */, char ** /* argv */) {
-    ALOGI("Power HAL Service 1.3 for Ginkgo is starting.");
+int main(int /* argc */, char** /* argv */) {
+    ALOGI("Power HAL Service 1.3 for Coral is starting.");
 
     android::sp<IPower> service = new Power();
     if (service == nullptr) {

@@ -1046,3 +1046,18 @@ service vendor.audio-hal-2-0 /vendor/bin/hw/android.hardware.audio@2.0-service
     interface android.hardware.audio@5.0::IDevicesFactory default
     interface android.hardware.audio@4.0::IDevicesFactory default
     interface android.hardware.audio@2.0::IDevicesFactory default
+
+on property:vendor.post_boot.parsed=1
+
+    # Enable powersaving
+    write /sys/module/lpm_levels/parameters/sleep_disabled 0
+
+    # Enable idle state listener
+    write /sys/class/drm/card0/device/idle_encoder_mask 1
+    write /sys/class/drm/card0/device/idle_timeout_ms 100
+
+    # Disable sched stats
+    write /proc/sys/kernel/sched_schedstats 0
+
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
