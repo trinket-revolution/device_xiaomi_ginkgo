@@ -18,7 +18,6 @@ $(call inherit-product-if-exists, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/google/pixel
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
