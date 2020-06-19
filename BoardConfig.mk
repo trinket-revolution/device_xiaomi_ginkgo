@@ -103,6 +103,7 @@ TARGET_USE_QTI_BT_STACK := true
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
 USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_USES_PREBUILT_CAMERA_SERVICE := true
 
 # ANXCamera
 -include vendor/aeonax/ANXCamera/BoardConfigAnx.mk
