@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2019 The LineageOS Project
 #
@@ -5,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_ginkgo.mk
+    $(LOCAL_DIR)/havoc_ginkgo.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_ginkgo-user \
-    xtended_ginkgo-userdebug \
-    xtended_ginkgo-eng
+    havoc_ginkgo-user \
+    havoc_ginkgo-userdebug \
+    havoc_ginkgo-eng

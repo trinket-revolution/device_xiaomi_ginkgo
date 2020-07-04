@@ -10,20 +10,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common MSM Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common Havoc OS stuff.
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# MSM Xtended Maintainer
+# Official HAVOC OS
+export export HAVOC_BUILD_TYPE=official
+
+# HAVOC OS Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.xtended.maintainer = "bezke"
+ro.havoc.maintainer = "bezke"
 
 export SELINUX_IGNORE_NEVERALLOWS=true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xtended_ginkgo
+PRODUCT_NAME := havoc_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
